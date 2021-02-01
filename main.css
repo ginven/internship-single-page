@@ -12,6 +12,11 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: #025202;
+}
+
 header {
     display: flex;
     flex-direction: row;
@@ -20,8 +25,12 @@ header {
     margin: 0.5rem;
 }
 
-header > section {
+header section {
     margin: 0.5rem;
+}
+
+header section input {
+    margin-right: 10px;
 }
 
 #logo > img {
@@ -58,13 +67,28 @@ article section {
     margin: 0 auto;
 }
 
-.carousel > img {
+.carousel img {
     max-width: 100%;
     object-fit: contain;
 }
 
 figure img {
     width: 100%;
+}
+
+figure figcaption {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+footer {
+    margin: 0.5rem;
+}
+
+footer p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-align: center; 
 }
 
 
