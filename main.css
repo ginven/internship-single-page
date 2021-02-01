@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0.5rem;
+}
+
+header > section {
+    margin: 0.5rem;
+}
+
+#logo > img {
+    width: 260px;
+}
+
+nav {
+    margin: 0.5rem;
+}
+
+nav ul {
+    padding: 0.5rem;
+    list-style-type: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+article {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+article section {
+    margin: 10px;
+}
+
+.carousel {
+    width: 70vw;
+    margin: 0 auto;
+}
+
+.carousel > img {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+figure img {
+    width: 100%;
+}
+
+
+@media only screen and (min-width: 768px) {
+    article section {
+        flex: 1 1 23%;
+    }
+  }
