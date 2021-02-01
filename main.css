@@ -44,6 +44,13 @@ nav {
 nav ul {
     padding: 0.5rem;
     list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+nav li {
+    padding-right: 0.5rem;
 }
 
 main {
@@ -63,8 +70,7 @@ article section {
 }
 
 .carousel {
-    width: 70vw;
-    margin: 0 auto;
+    width: 100vw;
 }
 
 .carousel img {
@@ -96,4 +102,10 @@ footer p {
     article section {
         flex: 1 1 23%;
     }
+   
+    .carousel {
+        width: 70vw;
+        margin: 0 auto;
+    }
+
   }
