@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html, body { 
+    height:100%;
+}
+
+html {
+    background-color: #ffffff;
+}
+
+/* .flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+} */
+
+body {
+  padding: 0;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.description {
+    text-align: center;
+    margin: 20px;
+}
+
+.description h1 {
+    margin-top: 50px;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    margin: 10px 0 0 0;
+}
+
+header a, menu a {
+    text-decoration: none;
+    color: #025202;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+header section {
+    margin: 0.5rem;
+}
+
+#header-search-login {
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+.login {
+    min-width: 60px;
+    margin-left: 10px;
+}
+
+
+#logo > img {
+    width: 260px;
+}
+
+nav ul {
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+nav li {
+    padding: 1rem;
+    transition: background-color 0.5s ease;
+    background-color: #4D8400;
+}
+
+.menu {
+    background-color: #4D8400;
+}
+
+.menu a {
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.menu li:hover {
+    background-color: #68A611;
+}
+
+
+main {
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.products {
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap
+}
+
+.price {
+    color: #4D8400;
+}
+
+.cart-btn {
+    max-width: 160px;
+    align-self: center;
+}
+
+.carousel {
+    width: 100vw;
+}
+
+.carousel img {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+figure img {
+    width: 100%;
+}
+
+
+footer {
+    background-color: #68A611;
+    color: #ffffff;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 50px;
+    width: 100%;
+}
+
+footer p {
+  margin: 0;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.sprites {
+    background-image: url('http://www.trenatics.com/public/images/iconfile/sprites/css-sprite/sprite-action-grey600.png');
+    background-repeat: no-repeat;
+    width: 442px;
+    height: 442px;
+}
+
+#login {
+    color: #4D8400;
+    height: 20px;
+    width: 20px;
+    padding-left: 22px;
+    display: inline-block;
+    background-position: -8px -8px;
+}
+
+#login:hover {
+    color: #68A611;
+    background-position: -7px -75px;
+}
+
+@media only screen and (min-width: 768px) {
+    .product {
+        flex: 1 1 23%;
+    }
+   
+    .carousel {
+        width: 70vw;
+        margin: 0 auto;
+    }
+
+  }
