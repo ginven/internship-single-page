@@ -1,0 +1,26 @@
+{
+  "name": "eshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "devDependencies": {
+    "json-server": "^0.16.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ginven/internship-single-page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ginven/internship-single-page/issues"
+  },
+  "homepage": "https://github.com/ginven/internship-single-page#readme"
+}

@@ -32,7 +32,7 @@ body {
     margin: 20px;
 }
 
-.description h1 {
+h1 {
     margin-top: 50px;
     font-size: 2rem;
     text-transform: uppercase;
@@ -65,6 +65,14 @@ header section {
 #header-search-login {
     flex-wrap: wrap;
     align-items: baseline;
+}
+
+.form-add-item {
+    width: 100%
+}
+
+.btn-delete {
+    border: 1px solid #e94707;
 }
 
 .login {
@@ -104,7 +112,7 @@ nav li {
 
 
 main {
-    padding-bottom: 50px;
+    padding-bottom: 80px;
     display: flex;
     flex-direction: column;
 }
@@ -128,6 +136,10 @@ main {
 .cart-btn {
     max-width: 160px;
     align-self: center;
+}
+
+.add-item {
+    text-align: center;
 }
 
 .carousel {
