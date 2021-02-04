@@ -72,7 +72,12 @@ header section {
 }
 
 .btn-delete {
-    border: 1px solid #e94707;
+    background-color: mistyrose;
+    border: 1px solid indianred;
+}
+
+.btn-delete:hover {
+    background-color: pink;
 }
 
 .login {
