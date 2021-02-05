@@ -81,6 +81,9 @@ const editProduct = (event) => {
     .then(data => {
         showMessage('<strong>Well done!</strong> You updated product succesfully.', 'alert-success');
         // WHAT TO DO NEXT? REDIRECT? 
+        setTimeout(function(){
+            window.location = "index.html";
+        }, 2000);
         console.log(data)
     })
     .catch((error) => {
@@ -104,9 +107,10 @@ const editProduct = (event) => {
       return response.json()
     })
     .then(data => {
-
-        // showMessage('<strong>Well done!</strong> You updated product succesfully.', 'alert-success');
-        window.location = "index.html";
+        showMessage('<strong>Well done!</strong> Item was deleted.', 'alert-success');
+        setTimeout(function(){
+            window.location = "index.html";
+        }, 2000);
         console.log(data)
     })
     .catch((error) => {
