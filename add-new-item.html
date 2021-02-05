@@ -6,6 +6,7 @@
     <title>Add new item</title>
     <link rel="stylesheet" href="https://nc4-visma.s3.eu-north-1.amazonaws.com/v4.7.1/dist/css/nc.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <script type="text/javascript" src="./assets/js/add-item.js" defer></script>
 </head>
 <body>
     <header class="d-flex flex-row">
@@ -44,8 +45,8 @@
         <section class="add-item">
             <h1>Add new item</h1>
         </section>
-        <section class="d-flex flex-row  justify-content-center">
-            <form class="form-add-item col-sm-6 col-lg-4" method="POST">
+        <section class="d-flex flex-row justify-content-center">
+            <form class="form-add-item col-sm-6 col-lg-4" method="POST" action="http://lolcahost:3000/items">
                 <div class="form-group">
                     <label for="title">Title</label>
                     <input type="text" class="form-control" placeholder="Title" name="title" id="title" required>
@@ -63,7 +64,7 @@
                     <textarea class="form-control" rows="3" id="content" required></textarea>
                 </div>
                 <div>
-                    <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                    <button type="submit" id="add-item-btn" class="btn btn-primary btn-block">Submit</button>
                     <a class="btn btn-block" href="/index.html" role="button">Cancel</a>
                  </div>
             </form>

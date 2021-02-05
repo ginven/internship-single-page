@@ -40,7 +40,7 @@ const fetchProducts = () => {
 
 const listProductsTemplate = (item) => {
   return `
-      <a href="edit-tem.html?${item.id}">
+      <a href="edit-item.html?productId=${item.id}">
           <figure>
               <img src="${item.image}"
                   alt="${item.title}">

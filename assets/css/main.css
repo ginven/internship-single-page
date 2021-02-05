@@ -67,7 +67,7 @@ header section {
     align-items: baseline;
 }
 
-.form-add-item {
+.form-add-item, .form-edit-item {
     width: 100%
 }
 
