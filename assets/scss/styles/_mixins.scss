@@ -1,0 +1,5 @@
+@mixin sprite($height, $width, $background-position) {
+  height: $height;
+  width: $width;
+  background-position: $background-position;
+}

@@ -1,0 +1,59 @@
+
+.header {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+.header__section {
+    margin: 0.5rem;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+.header__login {
+    min-width: 60px;
+    margin-left: 10px;
+}
+
+.header__login--link {
+    @include sprite(20px, 20px, -8px -8px);
+    color: $primary-color;
+    padding-left: 22px;
+    display: inline-block;
+    &:hover {
+        color: $primary-light-color;
+        background-position: -7px -75px;
+    }
+}
+
+.header__logo {
+    max-width: 260px;
+}
+
+.menu__row {
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.menu__list {
+    padding: 1rem;
+    transition: background-color 0.5s ease;
+    background-color: $primary-color;
+    &:hover {
+        background-color: $primary-light-color;
+    }
+}
+
+.menu {
+    background-color: $primary-color;
+}
+
+.menu__link {
+    font-weight: bold;
+    color: $light-text-color;
+    text-transform: uppercase;
+}
+
+
+

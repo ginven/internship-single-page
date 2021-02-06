@@ -37,10 +37,10 @@ const fetchProducts = () => {
     })
     .then(data => {
       console.log('Success:', data);
-      let productsSection = document.querySelector('.products');
+      let productsSection = document.querySelector('.main__products');
       for (i = 0; i < data.length; i++) {
         let oneProduct = document.createElement("article");
-        oneProduct.classList.add('product');
+        oneProduct.classList.add('main__product');
         oneProduct.innerHTML = listProductsTemplate(data[i], i);
         productsSection.append(oneProduct)
       }
@@ -54,11 +54,11 @@ const listProductsTemplate = (item) => {
   return `
       <a href="edit-item.html?productId=${item.id}">
           <figure>
-              <img src="${item.image}"
+              <img class="product__image" src="${item.image}"
                   alt="${item.title}">
           </figure>
           <h2>${item.title}</h2>
-          <p class="price">${item.content} €</p>
+          <p class="product__price">${item.content} €</p>
       </a>
   `
 }

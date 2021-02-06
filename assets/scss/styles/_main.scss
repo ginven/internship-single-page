@@ -1,0 +1,56 @@
+
+.main {
+    padding-bottom: 80px;
+    @extend %flex-col;
+}
+
+.main__h1 {
+    text-align: center;
+    margin: 20px;
+}
+
+.main__carousel {
+    width: 100vw;
+    img {
+        max-width: 100%;
+        object-fit: contain;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .main__carousel {
+        width: 70vw;
+        margin: 0 auto;
+    }
+  }
+
+.main__products {
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap
+}
+
+.main__product {
+    @extend %flex-col;
+    margin: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+    .main__product {
+        flex: 1 1 23%;
+    }
+}
+
+.product__price {
+    color: $primary-color;
+}
+
+.main__new-item {
+    text-align: center;
+}
+
+.product__image {
+    max-width: 400px;
+    width: 100%;
+}
+

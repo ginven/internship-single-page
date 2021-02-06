@@ -1,5 +1,5 @@
-const addItemForm = document.querySelector('.form-add-item');
-const userMessageSection = document.querySelector('.user-message');
+const addItemForm = document.querySelector('.form--add');
+const userMessageSection = document.querySelector('.main__user-message');
 
 
 const showMessage = (message, cssClass) => {

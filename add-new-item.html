@@ -5,50 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add new item</title>
     <link rel="stylesheet" href="https://nc4-visma.s3.eu-north-1.amazonaws.com/v4.7.1/dist/css/nc.min.css">
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/index.css">
     <script type="text/javascript" src="./assets/js/add-item.js" defer></script>
 </head>
 <body>
-    <header class="d-flex flex-row">
-        <section id="logo">
-            <a href="/"></a><img src="https://placeholder.com/wp-content/uploads/2018/10/placeholder.com-logo4.jpg" alt="Page logo" / ></a>
+    <header class="header d-flex flex-row">
+        <section class="header__section">
+            <a href="/"><img class="header__logo" src="https://placeholder.com/wp-content/uploads/2018/10/placeholder.com-logo4.jpg" alt="Page logo" / ></a>
         </section>
-        <section id="header-search-login" class="d-flex flex-row">
-            <div class="form-group search-group search-group-primary">
-                <label for="form_control_ex3" class="sr-only">Search</label>
-                <input id="form_control_ex3" class="form-control" type="search" placeholder="Search..." aria-label="searchBlock">
-                <span class="search-icon"></span>
-                <span class="clear-search">Clear</span>
+        <section class="header__section d-flex flex-row">
+            <div class="header__search">
+                <div class="form-group search-group search-group-primary">
+                    <label for="form_control_ex3" class="sr-only">Search</label>
+                    <input id="form_control_ex3" class="form-control" type="search" placeholder="Search..." aria-label="searchBlock">
+                    <span class="search-icon"></span>
+                    <span class="clear-search">Clear</span>
+                </div>
             </div>
-            <div class="login">
-                <a class="sprites" id="login" href="/login">Login</a>
+            <div class="header__login">
+                <a class="sprites header__login--link" href="/login">Login</a>
             </div>
         </section>
     </header>
     <nav class="menu">
-        <ul class="d-flex flex-row">
-            <li>
-                <a href="/">Home</a>
+        <ul class="menu__row d-flex flex-row">
+            <li class="menu__list">
+                <a class="menu__link" href="/">Home</a>
             </li>
-            <li>
-                <a href="#">Frying pans</a>
+            <li class="menu__list">
+                <a class="menu__link" href="#">Frying pans</a>
             </li>
-            <li>
-                <a href="#">Glasses</a>
+            <li class="menu__list">
+                <a class="menu__link" href="#">Glasses</a>
             </li>
-            <li>
-                <a href="#">Mugs & cups</a>
+            <li class="menu__list">
+                <a class="menu__link" href="#">Mugs & cups</a>
             </li>
         </ul>
     </nav>
-    <main>
-        <section class="add-item">
+    <main class="main">
+        <section class="main__h1">
             <h1>Add new item</h1>
         </section>
-        <section class="d-flex flex-row justify-content-center user-message">
+        <section class="main__user-message d-flex flex-row justify-content-center">
         </section>
-        <section class="d-flex flex-row justify-content-center">
-            <form class="form-add-item col-sm-6 col-lg-4" method="POST" action="http://lolcahost:3000/items">
+        <section class="main__form d-flex flex-row justify-content-center">
+            <form class="form--add col-sm-6 col-lg-4" method="POST" action="">
                 <div class="form-group">
                     <label for="title">Title</label>
                     <input type="text" class="form-control" placeholder="Title" name="title" id="title" required>
@@ -72,10 +74,8 @@
             </form>
         </section>
     </main>
-    <footer>
-        <p><b>2021.</b> Everything for cooking and more.</p>
-    </footer>
-
-    
+    <footer class="footer">
+        <p class="footer__text"><b>2021.</b> Everything for cooking and more.</p>
+    </footer>     
 </body>
 </html>

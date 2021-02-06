@@ -1,5 +1,5 @@
-const editItemForm = document.querySelector('.form-edit-item');
-const userMessageSection = document.querySelector('.user-message');
+const editItemForm = document.querySelector('.form--edit');
+const userMessageSection = document.querySelector('.main__user-message');
 
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);

@@ -5,51 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cooking wares - ONLINE SHOP</title>
     <link rel="stylesheet" href="https://nc4-visma.s3.eu-north-1.amazonaws.com/v4.7.1/dist/css/nc.min.css">
-    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
     <script type="text/javascript" src="./assets/js/index.js"></script>
 </head>
 <body>
-    <header class="d-flex flex-row">
-        <section id="logo">
-            <a href="/"></a><img src="https://placeholder.com/wp-content/uploads/2018/10/placeholder.com-logo4.jpg" alt="Page logo" / ></a>
+    <header class="header d-flex flex-row">
+        <section class="header__section">
+            <a href="/"><img class="header__logo" src="https://placeholder.com/wp-content/uploads/2018/10/placeholder.com-logo4.jpg" alt="Page logo" / ></a>
         </section>
-        <section id="header-search-login" class="d-flex flex-row">
-            <div class="form-group search-group search-group-primary">
-                <label for="form_control_ex3" class="sr-only">Search</label>
-                <input id="form_control_ex3" class="form-control" type="search" placeholder="Search..." aria-label="searchBlock">
-                <span class="search-icon"></span>
-                <span class="clear-search">Clear</span>
+        <section class="header__section d-flex flex-row">
+            <div class="header__search">
+                <div class="form-group search-group search-group-primary">
+                    <label for="form_control_ex3" class="sr-only">Search</label>
+                    <input id="form_control_ex3" class="form-control" type="search" placeholder="Search..." aria-label="searchBlock">
+                    <span class="search-icon"></span>
+                    <span class="clear-search">Clear</span>
+                </div>
             </div>
-            <div class="login">
-                <a class="sprites" id="login" href="/login">Login</a>
+            <div class="header__login">
+                <a class="header__login--link sprites" href="/login">Login</a>
             </div>
         </section>
     </header>
     <nav class="menu">
-        <ul class="d-flex flex-row">
-            <li>
-                <a href="/">Home</a>
+        <ul class="menu__row d-flex flex-row">
+            <li class="menu__list">
+                <a class="menu__link" href="/">Home</a>
             </li>
-            <li>
-                <a href="#">Frying pans</a>
+            <li class="menu__list">
+                <a class="menu__link" href="#">Frying pans</a>
             </li>
-            <li>
-                <a href="#">Glasses</a>
+            <li class="menu__list">
+                <a class="menu__link" href="#">Glasses</a>
             </li>
-            <li>
-                <a href="#">Mugs & cups</a>
+            <li class="menu__list">
+                <a class="menu__link" href="#">Mugs & cups</a>
             </li>
         </ul>
     </nav>
-    <main>
-        <section class="carousel">
+    <main class="main">
+        <section class="main__carousel">
             <img src="https://images.pexels.com/photos/952478/pexels-photo-952478.jpeg" alt="Image of a knife"/>
         </section>
-        <section class="description">
+        <section class="main__h1">
             <h1>Our best</h1>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa sequi laboriosam, pariatur dicta recusandae placeat ipsum, quos illum cupiditate nobis deleniti dolorum amet veritatis ut neque totam, ex alias optio.</p>
         </section>
-        <section class="d-flex flex-row products" id="products">
+        <section class="main__products d-flex flex-row">
             <!-- <article class="product">
                 <a href="#">
                     <figure>
@@ -62,14 +64,12 @@
                 <button type="button" class="cart-btn btn btn-primary">Add to Cart</button> 
             </article> -->
         </section>
-        <section class="add-item">
-            <a class="btn"  href="/add-new-item.html" role="button">Add new item</a>
+        <section class="main__new-item">
+            <a class="btn btn-primary btn-lg"  href="/add-new-item.html" role="button">Add new item</a>
         </section>
     </main>
-    <footer>
-        <p><b>2021.</b> Everything for cooking and more.</p>
-    </footer>
-
-    
+    <footer class="footer">
+        <p class="footer__text"><b>2021.</b> Everything for cooking and more.</p>
+    </footer>   
 </body>
 </html>
