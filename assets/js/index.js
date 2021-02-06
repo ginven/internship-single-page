@@ -1,8 +1,7 @@
-
-// FETCH PRODUCTS WITH ASYNC/AWAIT 
+// FETCH PRODUCTS WITH ASYNC/AWAIT
 // async function fetchProducts() {
 //     const response = await fetch('http://localhost:3000/items', {
-//         method: 'GET', 
+//         method: 'GET',
 //         headers: {
 //           'Content-Type': 'application/json'
 //         }
@@ -26,28 +25,28 @@ const fetchProducts = () => {
   fetch('http://localhost:3000/items', {
     method: 'GET',
     headers: {
-      'Content-Type': 'application/json',
+      'Content-Type': 'application/json'
     }
   })
     .then(response => {
       if (!response.ok) {
-        throw new Error('Network response was not ok');
+        throw new Error('Network response was not ok')
       }
       return response.json()
     })
     .then(data => {
-      console.log('Success:', data);
-      let productsSection = document.querySelector('.main__products');
-      for (i = 0; i < data.length; i++) {
-        let oneProduct = document.createElement("article");
-        oneProduct.classList.add('main__product');
-        oneProduct.innerHTML = listProductsTemplate(data[i], i);
+      console.log('Success:', data)
+      const productsSection = document.querySelector('.main__products')
+      for (let i = 0; i < data.length; i++) {
+        const oneProduct = document.createElement('article')
+        oneProduct.classList.add('main__product')
+        oneProduct.innerHTML = listProductsTemplate(data[i])
         productsSection.append(oneProduct)
       }
     })
     .catch((error) => {
-      console.error('Error:', error);
-    });
+      console.error('Error:', error)
+    })
 }
 
 const listProductsTemplate = (item) => {
@@ -63,10 +62,6 @@ const listProductsTemplate = (item) => {
   `
 }
 
-window.onload = (event) => {
+window.onload = () => {
   fetchProducts()
-};
-
-
-
-
+}
