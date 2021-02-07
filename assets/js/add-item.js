@@ -1,8 +1,10 @@
 const addItemForm = document.querySelector('.form--add')
 const userMessageSection = document.querySelector('.main__user-message')
 
+const htmlMessage = document.createElement('div')
+
 const showMessage = (message, cssClass) => {
-  const htmlMessage = document.createElement('div')
+
   htmlMessage.innerHTML = `
         <div class="alert alert-sm ${cssClass}" role="alert">
         ${message}
@@ -37,6 +39,9 @@ const addProduct = (event) => {
     .then(response => {
       if (!response.ok) {
         showMessage('<strong>Oh no!</strong> Something went wrong. Try again.', 'alert-danger')
+        setTimeout(function () {
+          htmlMessage.remove()
+        }, 3000)
         throw new Error('Network response was not ok')
       }
       return response.json()

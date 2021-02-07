@@ -11,9 +11,9 @@ let image = document.querySelector('#imageUrl')
 let content = document.querySelector('#content')
 
 const deleteBtn = document.querySelector('.btn-delete')
+const htmlMessage = document.createElement('div')
 
 const showMessage = (message, cssClass) => {
-  const htmlMessage = document.createElement('div')
   htmlMessage.innerHTML = `
         <div class="alert alert-sm ${cssClass}" role="alert">
         ${message}
@@ -32,6 +32,9 @@ const fetchProduct = () => {
     .then(response => {
       if (!response.ok) {
         showMessage('<strong>Something went wrong!</strong> Check if this product exists.', 'alert-danger')
+        setTimeout(function () {
+          htmlMessage.remove()
+        }, 3000)
         throw new Error('Network response was not ok')
       }
       return response.json()
@@ -73,6 +76,9 @@ const editProduct = (event) => {
     .then(response => {
       if (!response.ok) {
         showMessage('<strong>Oh no!</strong> Something went wrong. Try again.', 'alert-danger')
+        setTimeout(function () {
+          htmlMessage.remove()
+        }, 3000)
         throw new Error('Network response was not ok')
       }
       return response.json()
@@ -100,6 +106,9 @@ const deleteProduct = () => {
     .then(response => {
       if (!response.ok) {
         showMessage('<strong>Something went wrong</strong> Check if this product exists.', 'alert-danger')
+        setTimeout(function () {
+          htmlMessage.remove()
+        }, 3000)
         throw new Error('Network response was not ok')
       }
       return response.json()
