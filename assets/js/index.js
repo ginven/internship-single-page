@@ -37,12 +37,12 @@ const fetchProducts = () => {
     .then(data => {
       console.log('Success:', data)
       const productsSection = document.querySelector('.main__products')
-      for (let i = 0; i < data.length; i++) {
+      data.forEach(product => {
         const oneProduct = document.createElement('article')
         oneProduct.classList.add('main__product')
-        oneProduct.innerHTML = listProductsTemplate(data[i])
+        oneProduct.innerHTML = listProductsTemplate(product)
         productsSection.append(oneProduct)
-      }
+      })
     })
     .catch((error) => {
       console.error('Error:', error)
